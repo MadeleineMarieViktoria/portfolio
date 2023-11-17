@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --yellow: #ffee1d;
+  --green: #c7d216;
+  --blue: #bcdbd6;
+  --purple: #cd88bf;
+  --pink: #ff55a9;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  margin: 0px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 5rem;
+}
+
+h2 {
+  margin: 0px;
+  font-weight: 500;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 32px 100px;
+  border-bottom: solid 2px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+header nav a {
+  margin-left: 24px;
+}
+
+.intro {
+  height: 300px;
+  padding: 0px 100px;
+  display: flex;
+  +++justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px var(--black);
+  background: linear-gradient(
+    to right,
+    rgba(246, 251, 3, 0.8),
+    rgba(111, 255, 0, 0.57)
+  );
+}
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(208, 255, 38);
+  padding: 50px 100px 300px 100px;
+  border-top: solid 1px;
+}
+
+footer nav a {
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    position: -webkit-static; /* Safari */
+    position: static;
+    padding: 24px;
+  }
+
+  .intro {
+    padding: 0px 24px;
+  }
+
+  .name {
+    width: 90px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  footer {
+    padding: 55px 24px 300px 24px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer a {
+    justify-content: flex-end;
+  }
+}
