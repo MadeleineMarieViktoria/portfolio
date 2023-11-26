@@ -29,9 +29,15 @@
   width: 49%;
 }
 
+h2 {
+  margin-top: 80px;
+  margin-bottom: 16px;
+}
+
 h4 {
   margin-top: 16px;
   margin-bottom: 4px;
+  color: var(--blue);
 }
 
 .card-img-container img {
@@ -49,7 +55,8 @@ h4 {
 }
 
 footer {
-  border-top: solid black 2px;
+  border-top: solid var(--blue) 1px;
+  margin-bottom: 100px;
 }
 
 @media screen and (max-width: 800px) {

@@ -2,50 +2,68 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Aviak;
+  src: local(Aviak);
+}
+
 :root {
-  --black: #000000;
-  --white: #f1ece7;
-  --yellow: #ffee1d;
-  --green: #c7d216;
-  --blue: #124b43;
-  --purple: #cd88bf;
-  --pink: #ff55a9;
+  --white: #fffaf6;
+  --blue: #3b322e;
+  --green: #c8e2b0;
 }
 
 a {
-  color: rgb(0, 0, 0);
+  color: var(--blue);
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 img {
   max-width: 100%;
   display: block;
   padding: 16px;
-  border: solid black 2px;
+  border: solid var(--blue) 1px;
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--green);
   font-family: "Inter", sans-serif;
   margin: 0px;
 }
 
 h1 {
+  color: var(--blue);
   margin: 0;
-  font-size: 3rem;
-  font-weight: 800;
-  line-height: 3.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  max-width: 310px;
+}
+
+.aviak {
+  font-family: Aviak;
+  font-weight: normal;
+  font-size: 6rem;
+  line-height: 5.3rem;
+  letter-spacing: 1.5px;
+}
+
+.aviak:hover {
+  color: var(--green);
+  transition: 0.7s;
 }
 
 h2 {
   margin: 0px;
   font-weight: 500;
+  color: var(--blue);
 }
 
 p {
   margin-top: 5px;
   margin-bottom: 20px;
   font-weight: 300;
+  color: var(--blue);
 }
 
 header {
@@ -53,7 +71,7 @@ header {
   justify-content: space-between;
   background-color: var(--white);
   padding: 32px 100px;
-  border-bottom: solid 2px;
+  border-bottom: solid var(--blue) 1px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -68,8 +86,8 @@ header nav a {
   padding: 0px 200px;
   display: flex;
   align-items: end;
-  border-bottom: solid 2px var(--black);
-  background: var(--blue);
+  border-bottom: solid 1px var(--blue);
+  background: var(--white);
 }
 
 .intro-text {
@@ -86,12 +104,18 @@ main {
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: var(--blue);
-  padding: 50px 100px 300px 100px;
+  background-color: var(--green);
+  padding: 32px 100px 50px 100px;
 }
 
 footer nav a {
   margin-right: 24px;
+}
+
+iframe {
+  max-width: 510px;
+  background-color: var(--white);
+  margin: 30px 100px;
 }
 
 @media screen and (max-width: 800px) {
@@ -107,7 +131,7 @@ footer nav a {
 
   .intro {
     padding: 0px 24px;
-    height: 200px;
+    height: 270px;
   }
 
   .name {
@@ -120,7 +144,7 @@ footer nav a {
   }
 
   footer {
-    padding: 55px 24px 100px 24px;
+    padding: 24px 24px 100px 24px;
   }
 
   nav {
@@ -130,5 +154,9 @@ footer nav a {
 
   footer a {
     justify-content: flex-end;
+  }
+
+  iframe {
+    margin: 0px 0px;
   }
 }

@@ -1,6 +1,6 @@
 .project {
   display: flex;
-  border-bottom: solid black 2px;
+  border-bottom: solid var(--blue) 1px;
   padding: 48px 200px;
 }
 
@@ -12,16 +12,21 @@
 
 .project-text a {
   padding: 8px 16px;
-  border: solid black 2px;
-  border-radius: 30px;
+  color: var(--white);
+  background-color: var(--blue);
+  border: solid var(--blue) 1px;
+}
+
+.project-text a:hover {
+  color: var(--blue);
+  background-color: var(--green);
+  border: solid var(--blue) 1px;
+  transition: 0.7s;
 }
 
 .project-text p {
   margin-bottom: 30px;
   max-width: 300px;
-}
-
-.left .project-text {
 }
 
 .right .project-text {
@@ -32,6 +37,7 @@
 
 .project-img {
   width: 40%;
+  aspect-ratio: 1/1;
 }
 
 .project-img img {
