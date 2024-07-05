@@ -19,7 +19,7 @@
 
 .project-text a:hover {
   color: var(--blue);
-  background-color: var(--green);
+  background-color: var(--white);
   border: solid var(--blue) 1px;
   transition: 0.7s;
 }

@@ -10,7 +10,7 @@
 :root {
   --white: #fffaf6;
   --blue: #3b322e;
-  --green: #c8e2b0;
+  --green: #4e4542;
 }
 
 a {
@@ -110,6 +110,7 @@ footer {
 
 footer nav a {
   margin-right: 24px;
+  color: var(--white);
 }
 
 iframe {
